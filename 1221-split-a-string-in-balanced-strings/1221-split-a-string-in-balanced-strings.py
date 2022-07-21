@@ -11,6 +11,6 @@ class Solution(object):
                 count+=1
             else:
                 count-=1
-            if not count:
+            if (count==0):
                 D+=1
         return D
