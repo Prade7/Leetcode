@@ -4,9 +4,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        e=set(nums)
-        if(sorted(list(e))!=sorted(nums)):
+        if(len(set(nums))!=len(nums)):
             return True
-        else:
-            return False
-        # print(list(e))
+        
+        
