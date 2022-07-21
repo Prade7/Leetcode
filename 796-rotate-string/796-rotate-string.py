@@ -5,7 +5,7 @@ class Solution(object):
         :type goal: str
         :rtype: bool
         """
-        if(len(s)<len(goal) or len(s)>len(goal)):
+        if(len(s)!=len(goal)):
             return False
         a=s
         i=0
@@ -16,4 +16,3 @@ class Solution(object):
             if(s==goal):
                 return True
         return False
-            # print(s)
