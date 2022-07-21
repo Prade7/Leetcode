@@ -11,5 +11,4 @@ class Solution(object):
             s=s[1::]+s[0]
             if(s==goal):
                 return True
-                break
         return False
