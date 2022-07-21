@@ -1,18 +1,16 @@
-# class Solution(object):
-#     def maxSubArray(self, nums):
-#         """
-#         :type nums: List[int]
-#         :rtype: int
-#         """
-class Solution:
+class Solution(object):
     def maxSubArray(self, nums):
-        q=nums[0]
-        c=0
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        
+        c=nums[0]
+        f=0
         for ele in nums:
-            if(c<=0):
-                c=0
+            if(f<=0):
+                f=0
+            f+=ele
+            c=max(f,c)
+        return c
             
-            c+=ele
-            q=max(c,q)
-        return q
-                
