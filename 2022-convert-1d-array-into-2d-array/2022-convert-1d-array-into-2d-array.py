@@ -17,8 +17,6 @@ class Solution(object):
                 c+=1
             if(c==n):
                 g.append(q)
-                # print(11111)
                 c=0
                 q=[]
-        print(g)
         return g
