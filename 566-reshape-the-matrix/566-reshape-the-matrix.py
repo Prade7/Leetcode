@@ -8,7 +8,6 @@ class Solution(object):
         """
         
         if(len(mat)*len(mat[0])!=(r*c)):
-            # print("jys")
             return mat
         f=0
         res=[]
@@ -23,7 +22,6 @@ class Solution(object):
                     res=[]
                     f=0
         return g     
-        print(g)          
         
         
         
