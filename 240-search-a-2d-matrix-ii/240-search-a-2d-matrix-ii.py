@@ -6,5 +6,6 @@ class Solution(object):
         :rtype: bool
         """
         for ele in matrix:
-            if(target in ele):
-                return True
+            for e in ele:
+                if(target==e):
+                    return True
