@@ -5,8 +5,8 @@ class Solution(object):
         :rtype: List[int]
         """
         d=0
+        g=[]
         for i in range(len(nums)):
             d+=nums[i]
-            nums[i]=d
-        print(nums)
-        return nums
+            g.append(d)
+        return g
