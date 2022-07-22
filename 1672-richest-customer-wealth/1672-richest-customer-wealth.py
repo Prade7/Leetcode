@@ -4,7 +4,8 @@ class Solution(object):
         :type accounts: List[List[int]]
         :rtype: int
         """
-        d=[]
+        d=0
         for ele in accounts:
-            d.append(sum(ele))
-        return max(d)
+            if(sum(ele)>d):
+                d=sum(ele)
+        return (d)
