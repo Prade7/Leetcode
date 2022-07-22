@@ -5,12 +5,11 @@ class Solution(object):
         :rtype: int
         """
         count=0
-        a=sorted(arr)
         h=[]
         for ele in range(len(arr)):
             h.extend(sorted(arr[:ele]))
             h.extend(sorted(arr[ele::]))
-            if(h==a):
+            if(h==sorted(arr)):
                 count+=1
             h=[]
         return count
