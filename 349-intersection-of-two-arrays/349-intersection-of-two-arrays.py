@@ -5,12 +5,12 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
-        d=[]
+        d=set()
         if(len(nums1)>len(nums2)):
             for ele in nums1:
                 if(ele in nums2):
-                    d.append(ele)
+                    d.add(ele)
         for ele in nums2:
             if(ele in nums1):
-                d.append(ele)
-        return set(d)
+                d.add(ele)
+        return (d)
