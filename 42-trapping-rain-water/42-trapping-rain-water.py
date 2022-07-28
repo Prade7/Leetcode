@@ -13,7 +13,6 @@ class Solution(object):
                 e=ele
             else:
                 leftH.append(e)
-        print(leftH)
         e=0
         rightH=[]
         for ele in range(len(height)-1,-1,-1):
