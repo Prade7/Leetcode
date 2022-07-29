@@ -24,7 +24,6 @@ class Solution(object):
             if(b[ele]=="1"):
                 d+=pow(2,aa)
             aa+=1  
-        print(d+c)
         d+=c
         count=""
         while(True):
@@ -43,8 +42,6 @@ class Solution(object):
                 count+="0"
                 d/=2
         
-            # print(count)
-            print(d)
         count=count[::-1]
         for ele in range(len(count)):
             if(count[ele]!="0"):
