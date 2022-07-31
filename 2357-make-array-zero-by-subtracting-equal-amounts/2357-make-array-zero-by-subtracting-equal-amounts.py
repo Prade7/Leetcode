@@ -14,7 +14,6 @@ class Solution(object):
         nums=set(nums)
         if(0 in nums):
             nums.remove(0)
-        print(nums)
         nums=list(nums)
         if(nums==[]):
             return 0
