@@ -4,7 +4,7 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        min_price=99999
+        min_price=prices[0]
         profit=0
         for ele in prices:
             if(ele<min_price):
