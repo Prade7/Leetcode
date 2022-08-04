@@ -13,7 +13,16 @@ class Solution(object):
             return 1
         if(n==2):
             return 1
-        for i in range(n-2):
+        # for i in range(n-2):
+        #     t0,t1,t2=t1,t2,(t0+t1+t2)
+        # return t2
+        
+        while(n>=3):
+            
             t0,t1,t2=t1,t2,(t0+t1+t2)
+
+            n-=1
         return t2
+            
+            
             
