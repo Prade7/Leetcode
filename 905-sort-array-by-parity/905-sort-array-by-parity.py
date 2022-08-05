@@ -6,8 +6,7 @@ class Solution:
         for ele in nums:
             if(ele%2==0):
                 d.append(ele)
-        for ele in nums:
-            if(ele%2!=0):
+            else:
                 h.append(ele)
         d.extend(h)
         return d
