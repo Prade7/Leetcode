@@ -9,5 +9,4 @@ class Solution:
                 return original*2
             else:
                 original*=2
-        # return original
                 
