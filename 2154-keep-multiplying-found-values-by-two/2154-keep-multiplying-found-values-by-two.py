@@ -4,9 +4,19 @@ class Solution:
         if(original not in nums):
             return original
         
-        for i in nums:
-            if(original*2 not in nums):
-                return original*2
-            else:
-                original*=2
-                
+        nums.sort()
+        
+        i=0
+        l=len(nums)-1
+        target=original
+        while(i<=l):
+            mid=(i+l)//2  
+            if(nums[mid]==target):
+                i=0
+                l=len(nums)-1
+                target*=2
+            elif(nums[mid]>target):
+                l=mid-1
+            elif(nums[mid]<target):
+                i=mid+1
+        return target
