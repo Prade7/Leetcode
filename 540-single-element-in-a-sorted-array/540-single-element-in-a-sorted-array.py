@@ -1,16 +1,11 @@
-class Solution(object):
-    def singleNonDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        d={}
+class Solution:
+    def singleNonDuplicate(self, nums: List[int]) -> int:
+        hm={}
         for ele in nums:
-            if(ele in d):
-                d[ele]=d[ele]+1
+            if(ele not in hm):
+                hm[ele]=1
             else:
-                d[ele]=1
-            
-        for i,k in d.items():
-            if(k==1):
-                return i
+                hm[ele]+=1
+        for key,value in hm.items():
+            if(value==1):
+                return key
