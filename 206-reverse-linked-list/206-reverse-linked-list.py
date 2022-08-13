@@ -9,7 +9,7 @@ class Solution:
         
         while(head):
             temp=head
-            head=head.next
+            head=temp.next
             temp.next=prev
             prev=temp
         return prev
