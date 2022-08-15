@@ -3,19 +3,19 @@ class Solution:
         left=0
         right=len(nums)-1
         temp=nums[0]
-        
         while(left<=right):
             if(nums[left]<nums[right]):
                 temp=min(temp,nums[left])
-                break
+                break            
+            mid=(left+right)//2
+            temp=min(temp,nums[mid])
             
-            m=(left+right)//2
-            temp=min(temp,nums[m])
-            
-            if(nums[left]<=nums[m]):
-                left=m+1
+            if(nums[left]<=nums[mid]):
+                left=mid+1
             else:
-                right=m-1
-            
+                right=mid-1
+                
         return temp
+        
+        
         
