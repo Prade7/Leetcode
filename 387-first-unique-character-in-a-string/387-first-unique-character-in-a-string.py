@@ -1,12 +1,15 @@
-class Solution(object):
-    def firstUniqChar(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        # a=set(s)
-        # a=list(a)
-        for i in range(len(s)):
-            if(s.count(s[i])==1):
-                return i
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        hm={}
+        
+        for ele in s:
+            if(ele not in hm):
+                hm[ele]=1
+            else:
+                hm[ele]+=1
+        print(hm)
+        # res=list(hm.keys())
+        for i,ele in hm.items():
+            if(ele==1):
+                return s.index(i)
         return -1
