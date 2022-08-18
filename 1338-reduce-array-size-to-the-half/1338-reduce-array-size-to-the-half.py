@@ -11,8 +11,9 @@ class Solution:
         count=0
         values.sort(reverse=True)
         print(values)
-        l=len(arr)//2
-        while(l>0):
+        l=len(arr)
+        g=len(arr)//2
+        while(l>g):
             l-=values[count]
             count+=1
         return count
