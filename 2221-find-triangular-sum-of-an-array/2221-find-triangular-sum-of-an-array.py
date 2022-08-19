@@ -8,7 +8,6 @@ class Solution:
                     result.append((nums[j]+nums[j+1])%10)
                 else:
                     result.append(nums[j]+nums[j+1])
-            nums=result[::]
+            nums=result
         return nums[0]
                 
-            # print(i)
