@@ -13,7 +13,6 @@ class Solution:
         print(hm)
         for i in range(len(pattern)):
             if(hm[pattern[i]]!=s[i]):
-                print(hm[pattern[i]])
                 return False
         
         return True
