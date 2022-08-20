@@ -1,16 +1,6 @@
 class Solution:
     def judgeCircle(self, moves: str) -> bool:
-        
-        
-#         hm={}
-        
-#         for ele in moves:
-#             if(ele not in hm):
-#                 hm[ele]=1
-#             else:
-#                 hm[ele]+=1
-#         print(hm)
-
+    
         L=0
         R=0
         U=0
