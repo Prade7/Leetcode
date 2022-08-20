@@ -3,11 +3,7 @@ class Solution:
         s=s.split()
         if(len(s)!=len(pattern)):
             return False
-      
-        # if(len(set(s))==1 and len(set(pattern))==1):
-            # return True
-       
-        
+    
         if(len(set(pattern))!=len(set(s))):
             return False
         hm={}
