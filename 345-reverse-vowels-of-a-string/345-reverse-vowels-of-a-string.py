@@ -7,8 +7,10 @@ class Solution:
         while(start<end):
             if(s[start] in vowels) and (s[end] in vowels):
                 s[start],s[end]=s[end],s[start]
+                
                 start+=1
                 end-=1
+            
             elif(s[start] in vowels) and (s[end] not in vowels):
                 end-=1
             elif(s[end] in vowels) and (s[start] not in vowels):
@@ -16,7 +18,5 @@ class Solution:
             else:
                 start+=1
                 end-=1
-
         return "".join(s)
-        
         
