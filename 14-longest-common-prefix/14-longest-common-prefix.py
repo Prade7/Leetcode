@@ -12,7 +12,6 @@ class Solution:
                 if(r[ele]!=strs[i][ele]):
                     c=1
                     break
-            # print(r[ele])
             if(c==0):
                 result+=r[ele]
             if(c==1):
